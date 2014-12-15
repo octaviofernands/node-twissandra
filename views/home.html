@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div class="one column row">
+    <div class="column">
+        <h1>Timeline</h1>
+        <div class="ui feed">
+        {% for post in posts %}
+            <div class="event">
+                <div class="content">
+                    <div class="summary">
+                        {{post.username}}
+                    </div>
+                    <div class="extra text">
+                        {{post.body}}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

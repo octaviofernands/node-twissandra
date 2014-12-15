@@ -1,0 +1,30 @@
+{% extends 'layout_blank.html' %}
+
+{% block content %}
+
+
+<div class="one column row">
+    <div class="column">
+        <h1 style="margin-top:30px;text-align:center">Welcome!</h1>
+        <div class="ui center aligned segment" style="width:300px;margin:0 auto; margin-top:30px;">
+            <!--<div class="ui button">A</div>-->
+            <form method="POST" class="ui form" action="/login/send">
+                <div class="field">
+                    <label>Username</label>
+                    <input type="text" name="username" id="username" placeholder="username">
+                </div>
+                <div class="field">
+                    <label>Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <button class="ui primary button" type="submit">LOGIN</button>
+            </form>
+            <div class="ui horizontal divider">OR</div>
+            <a href="/signup" class="ui teal button">SIGNUP</a>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+

@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+
+
+
+<div class="one column row">
+    <div class="column">
+        <h1>Users</h1>
+
+        <ul>
+        {% for user in users %}
+            <li><strong>{{user.username}}</strong> <a href="/follow/{{user.username}}">follow</a></li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>
+
+
+<!--
+<h1 style="font-size:40px;">Users</h1>
+<br>
+<br>
+<br>
+{% for user in users %}
+    <strong>{{user.username}}</strong> <a href="/follow/{{user.username}}">follow</a><br>
+{% endfor %}
+-->
+{% endblock %}

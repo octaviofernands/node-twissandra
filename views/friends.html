@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div class="one column row">
+    <div class="column">
+        <h1 style="font-size:40px;">Following</h1>
+
+        <ul>
+        {% for friend in friends %}
+            <li><strong>{{friend.friend}}</strong></li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>
+
+{% endblock %}
