@@ -15,3 +15,6 @@ This project was inspired in [Twissandra for Python](https://github.com/twissand
  sudo npm install
 
  nodemon
+
+## Modules
+ For using in newest express & cassandra versions, download the package [connect-cassandra](https://github.com/octaviofernands/connect-cassandra) from my repo :)
